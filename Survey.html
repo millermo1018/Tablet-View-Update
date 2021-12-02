@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-chicago-skyline-fraser-hall.jpg">
+
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+        <h1>
+            <a href="index.html"> <strong><center>Chicago In Color</center></strong></a>
+        </h1>
+        <div>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Wellness.html">Wellness</a></li>
+                <li><a href="Survey.html">Survey</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="contact text-block">
+        <a id="contact"></a>
+        <h2>Feedback Form</h2>
+
+        <p>Feel free to leave a comment, question, or overall feedback below. I hope you were able to explore Chicago in Color and get a chance to check out some of the highlighted businesses!</p>
+
+        <div class="food-image">
+            <center><img src="feedback.jpeg" alt="" /></center>
+        </div>
+        <!-- <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="other">other</option>
+              </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </div> -->
+
+        <body>
+            <!-- Action removed for security purposes -->
+            <form action="https://formspree.io/f/xqkwvvje" method="POST">
+                <fieldset>
+                    <legend>Feedback Form</legend>
+
+                    <label for="name_id">Your Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="name_id" name="name" required>
+
+                    <label for="email_id">Your Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="email_id" name="email" required>
+
+                    <label for="phone_id">Your Phone Number</label>
+                    <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <div><span>Format: 123-456-7890</span></div>
+
+
+                    <label for="msg">Leave A Message</label>
+                    <textarea placeholder="Enter your message" id="msg" name="Message" required></textarea><br>
+
+                    <input type="checkbox" checked="checked" name="Remember Me" id="cBox">
+                    <label for="cBox">Remember me</label>
+
+                    <input type="submit" value="Contact Me">
+                </fieldset>
+            </form>
+        </body>
+</body>
+
+</html>
